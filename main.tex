@@ -1,0 +1,160 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.1.3, 30 April 2017) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons 
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% 
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font 
+%% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+\usepackage{hyperref}
+\usepackage[
+  separate-uncertainty = true,
+  multi-part-units = repeat
+]{siunitx}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{Mulberry}{HTML}{72243D}
+\definecolor{DarkRed}{HTML}{962938}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{DarkRed}
+\colorlet{accent}{Mulberry}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{Black}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+% Commands to include a company logo for each /cvevent
+\newcommand{\companylogo}[2]
+  {\hfill\raisebox{-2\baselineskip}[0pt][0pt]%
+    {\href{#2}{\includegraphics[height=3\baselineskip]{#1}}}}
+    
+\newcommand{\projectlogo}[2]
+  {\hfill\raisebox{-1\baselineskip}[0pt][0pt]%
+    {\href{#2}{\includegraphics[height=2\baselineskip]{#1}}}}
+
+\begin{document}
+\name{WALEED \textcolor{DarkRed}{AHMED}}
+% \tagline{1B Computer Engineering}
+% \photo{2.8cm}{Globe_High}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{w29ahmed@edu.uwaterloo.ca}
+  \phone{647-708-7272}
+  % \mailaddress{Address, Street, 00000 County}
+  \linkedin{\href{https://www.linkedin.com/in/waleed-a/}{linkedin.com/in/waleed-a}}
+  \github{\href{https://github.com/w29ahmed}{github.com/w29ahmed}}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+%   \orcid{orcid.org/0000-0000-0000-0000}
+}
+
+%% Make the header extend all the way to the right, if you want. 
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{Industrial Imaging Software Developer \companylogo{pictures/PPO_Logo.png}{https://ppo.ca/}}{ P\&P Optica}{Jan 2018 -- Apr 2018}{Waterloo, ON}
+\begin{itemize}
+\item Developed software for industrial imaging applications on \textbf{Linux} machines with \textbf{Git} version control in an \textbf{Agile} environment 
+\item Implemented image correction algorithms and post-processing for industrial cameras in \textbf{Python} using \textbf{Numpy}, \textbf{OpenCV}, and \textbf{Matplotlib}
+\item Refactored data handling modules for efficient file input/output and wrote unit tests for them in \textbf{Python} using \textbf{Pytest}
+\item Refactored camera control modules in \textbf{C/C++} that use the \textbf{Camera Link} serial protocol to interface with the camera for control purposes
+\item Documented software design decisions and a troubleshooting guide to efficiently debug issues pertaining to image acquisition
+\end{itemize}
+\divider
+
+\cvevent{Simulations Lab Assistant \companylogo{pictures/UW.jpg}{https://uwaterloo.ca/nano-micro-systems-lab/}}{University of Waterloo}{May 2017 -- Aug 2017}{Waterloo, ON}
+\begin{itemize}
+\item Simulated thermal management systems in \textbf{COMSOL Multiphysics} to be integrated with high power laser diodes in order to maximize device lifetime and performance 
+\item Conducted literature review on state-of-the-art semiconductor devices and cooling techniques
+\item Wrote technical report on results and analysis of simulation data; accepted for publication as an \textbf{IEEE} conference paper
+\end{itemize}
+
+\cvsection{Projects}
+
+\cvproject{Arduino Jukebox \projectlogo{pictures/Arduino.jpg}{https://www.arduino.cc/}}{\href{https://github.com/w29ahmed/Arduino-JukeBox}{github.com/w29ahmed/Arduino-JukeBox}}
+\begin{itemize}
+\item Programmed in \textbf{C++} to use analog input from a variable resistor to cycle through a list of songs displayed on a 16x2 LCD screen
+\item Songs are hard coded frequency patterns digitally sent to a piezoelectric speaker
+\end{itemize}
+
+\divider
+
+\cvproject{Arduino Voltmeter \projectlogo{pictures/Arduino.jpg}{https://www.arduino.cc/}}{\href{https://github.com/w29ahmed/Arduino-Voltmeter}{github.com/w29ahmed/Arduino-Voltmeter}}
+\begin{itemize}
+\item Programmed in \textbf{C++} to utilize a voltage divider circuit in order to read voltages up to 500 V with an error of \SI{\pm 1.4}{\percent}, displayed on a 16x2 LCD
+\end{itemize}
+
+\divider
+
+\cvproject{Toronto Raptors Image Classifier \projectlogo{pictures/tensorflow.png}{https://www.tensorflow.org/}}
+{\href{https://github.com/w29ahmed/toronto-raptors-classifier}{github.com/w29ahmed/toronto-raptors-classifier}}
+\begin{itemize}
+\item Utilized transfer learning on Google's Inception v3 image classifier to identify players on the Toronto Raptors using \textbf{TensorFlow}, an open source machine learning framework in \textbf{Python}
+\end{itemize}
+
+\divider
+
+\cvproject{Android Notes App \projectlogo{pictures/AndroidStudio.png}{https://developer.android.com/studio/index.html}}{\href{https://github.com/w29ahmed/Notes_App}{github.com/w29ahmed/Notes\_App}}
+\begin{itemize}
+\item Simple but efficient note taking app for Android API levels 15 and above constructed using \textbf{Java}, \textbf{XML}, and an \textbf{SQLite Database }
+\end{itemize}
+
+\medskip
+
+\end{document}

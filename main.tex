@@ -45,11 +45,8 @@
 \usepackage[T1]{fontenc}
 \usepackage[default]{lato}
 
-\usepackage{hyperref}
-\usepackage[
-  separate-uncertainty = true,
-  multi-part-units = repeat
-]{siunitx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{textcomp}
 
 % If using xelatex or lualatex:
 % \setmainfont{Lato}
@@ -137,7 +134,7 @@
 
 \cvproject{Arduino Voltmeter \projectlogo{pictures/Arduino.jpg}{https://www.arduino.cc/}}{\href{https://github.com/w29ahmed/Arduino-Voltmeter}{github.com/w29ahmed/Arduino-Voltmeter}}
 \begin{itemize}
-\item Programmed in \textbf{C++} to utilize a voltage divider circuit in order to read voltages up to 500 V with an error of \SI{\pm 1.4}{\percent}, displayed on a 16x2 LCD
+\item Programmed in \textbf{C++} to utilize a voltage divider circuit in order to read voltages up to 500 V (\textpm 1.4\% error) and display it on a 16x2 LCD screen
 \end{itemize}
 
 \divider
@@ -145,7 +142,7 @@
 \cvproject{Toronto Raptors Image Classifier \projectlogo{pictures/tensorflow.png}{https://www.tensorflow.org/}}
 {\href{https://github.com/w29ahmed/toronto-raptors-classifier}{github.com/w29ahmed/toronto-raptors-classifier}}
 \begin{itemize}
-\item Utilized transfer learning on Google's Inception v3 image classifier to identify players on the Toronto Raptors using \textbf{TensorFlow}, an open source machine learning framework in \textbf{Python}
+\item Utilized transfer learning on Google's Inception v3 image classifier to identify players on the Toronto Raptors using \textbf{TensorFlow}, an open source \textbf{machine learning} framework in \textbf{Python}
 \end{itemize}
 
 \divider

@@ -99,11 +99,32 @@
 \makecvheader
 \end{fullwidth}
 
+\cvsection[page1sidebar]{Skills}
+\smallskip
+\cvtag{C++}
+\cvtag{C\#}
+\cvtag{Python}
+\cvtag{JavaScript}
+\cvtag{HTML/CSS}
+\cvtag{Java}
+\cvtag{MATLAB}
+
+\divider
+
+\cvtag{OpenCV}
+\cvtag{ROS}
+\cvtag{.NET}
+\cvtag{Git}
+\cvtag{Bash}
+\cvtag{Linux}
+\cvtag{Arduino}
+\cvtag{VHDL}
+
 %% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
 %% You can always just use \marginpar{...} if you do
 %% not need to align the top of the contents to any
 %% \cvsection title in the "main" bar.
-\cvsection[page1sidebar]{Experience}
+\cvsection{Experience}
 
 \cvevent{Software Engineering Intern \companylogo{pictures/Synaptive_Logo.jpg}{https://www.synaptivemedical.com/}}{Synaptive Medical}{Sep 2018 -- Present}{Toronto, ON}
 \begin{itemize}
@@ -122,29 +143,20 @@
 \item Documented software design decisions and a troubleshooting guide to efficiently debug issues pertaining to image acquisition
 \end{itemize}
 
-\cvsection{Projects}
+\cvsection{Activities}
 
-\cvproject{Arduino Jukebox \projectlogo{pictures/Arduino.jpg}{https://www.arduino.cc/}}{\href{https://github.com/w29ahmed/Arduino-JukeBox}{github.com/w29ahmed/Arduino-JukeBox}}
+\cvevent{Software Team Member \companylogo{pictures/UW_Robotics.png}{http://uwrobotics.uwaterloo.ca/}}{UW Robotics}{Apr 2018 -- Current}{}
 \begin{itemize}
-\item Programmed in \textbf{C++} to use analog input from a variable resistor to cycle through a list of songs displayed on a 16x2 LCD screen
-\item Songs are hard coded frequency patterns digitally sent to a piezoelectric speaker
+\item Developed software architecture using a \textbf{Linux} based framework: \textbf{ROS} (Robot Operating System), for efficient package management and communication between \textbf{machine vision} modules in \textbf{C++}
+\item Used \textbf{CUDA}, NVIDEA's parallel computing platform for GPU optimization of \textbf{OpenCV} code in \textbf{C++} for lane and object detection
 \end{itemize}
 
 \divider
 
-\cvproject{Toronto Raptors Image Classifier \projectlogo{pictures/tensorflow.png}{https://www.tensorflow.org/}}
-{\href{https://github.com/w29ahmed/toronto-raptors-classifier}{github.com/w29ahmed/toronto-raptors-classifier}}
+\cvevent{Engineering Laboratories \& Projects \companylogo{pictures/ECE_Logo.png}{https://uwaterloo.ca/electrical-computer-engineering/}}{University of Waterloo}{Apr 2018 -- Current}{}
 \begin{itemize}
-\item Utilized transfer learning on Google's Inception v3 image classifier to identify players on the Toronto Raptors using \textbf{TensorFlow}, an open source \textbf{machine learning} framework in \textbf{Python}
+\item ECE 108: Analyzed common casino games with set logic/probability and modeled a social network using a relational database in \textbf{C++}
+\item ECE 124: Programmed FPGAs in \textbf{VHDL} using digital logic
 \end{itemize}
-
-\divider
-
-\cvproject{Android Notes App \projectlogo{pictures/AndroidStudio.png}{https://developer.android.com/studio/index.html}}{\href{https://github.com/w29ahmed/Notes_App}{github.com/w29ahmed/Notes\_App}}
-\begin{itemize}
-\item Simple but efficient note taking app for Android API levels 15 and above constructed using \textbf{Java}, \textbf{XML}, and a \textbf{SQLite Database }
-\end{itemize}
-
-\medskip
 
 \end{document}

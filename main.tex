@@ -72,7 +72,7 @@
 % Commands to include a company logo for each /cvevent
 \newcommand{\companylogo}[3]
   {\ifthenelse{\equal{#2}{}}{\hfill}{\hspace{#2}}\raisebox{-1.75\baselineskip}[0pt][0pt]%
-    {\href{#3}{\includegraphics[height=2.5\baselineskip]{#1}}}}
+    {\href{#3}{\includegraphics[height=2.0\baselineskip]{#1}}}}
     
 \newcommand{\projectlogo}[2]
   {\hfill\raisebox{-1\baselineskip}[0pt][0pt]%
@@ -126,11 +126,14 @@
 %% \cvsection title in the "main" bar.
 \cvsection{Experience}
 
-\cvevent{Software Engineering Intern \companylogo{pictures/Synaptive_Logo.jpg}{42mm}{https://www.synaptivemedical.com/}}{Synaptive Medical}{Sep 2018 -- Present}{Toronto, ON}
+\cvevent{Video Software Developer \companylogo{pictures/Synaptive_Logo.jpg}{47mm}{https://www.synaptivemedical.com/}}{Synaptive Medical}{Sep 2018 -- Dec 2018}{Toronto, ON}
 \begin{itemize}
-\item Implemented a colour contrast enhancement algorithm in \textbf{C\#} using three dimensional look up tables in order to improve visibility of biological tissue during surgical procedures
-\item Created a front-end interface using \textbf{JavaScript}, \textbf{HTML}, and \textbf{CSS} for testing/diagnostics of colour correction algorithms through an in-house web API paired with a \textbf{foreign function interface (FFI)} between \textbf{Visual C++} and \textbf{C\#}
-\item Refactored various \textbf{dynamically linked libraries} for colour corrections into a single library for more efficient and organized software architecture
+\item Reverse engineered third party camera color settings to improve visibility of biological tissue during surgical procedures
+\item Used \textbf{C\#} for design and integration of image processing algorithms with existing software architecture in a Windows environment
+\item Post-processed image data in \textbf{Python} using data libraries such as \textbf{Pandas}, \textbf{Numpy}, and \textbf{Matplotlib} to analyze colour manipulation
+\item Used \textbf{OpenCV} in \textbf{C++} to model and apply colour transformations 
+\item Created a Windows desktop application using the \textbf{.NET} framework to serve as a front-end interface for a serial communication protocol that allowed reading/writing of camera settings  
+\item Created a web interface using \textbf{JavScript}, \textbf{HTML}, and \textbf{CSS} for convenient and intuitive usage of a colour manipulation algorithm 
 \end{itemize}
 \divider
 
@@ -145,18 +148,11 @@
 
 \cvsection{Activities}
 
-\cvevent{Software Team Member \companylogo{pictures/UW_Robotics.png}{49.5mm}{http://uwrobotics.uwaterloo.ca/}}{UW Robotics}{Apr 2018 -- Current}{}
+\cvevent{Software Team Lead \companylogo{pictures/UW_Robotics.png}{59mm}{http://uwrobotics.uwaterloo.ca/}}{UW Robotics}{Apr 2018 -- Present}{}
 \begin{itemize}
-\item Developed software architecture using a \textbf{Linux} based framework: \textbf{ROS} (Robot Operating System), for efficient package management and communication between \textbf{machine vision} modules in \textbf{C++}
+\item Leading software planning for a mobile racing robot set to compete in the \href{https://iarrc.org/}{\textbf{International Autonomous Robot Racing Competition}}
+\item Developed software architecture using a \textbf{Linux} based framework; \textbf{ROS} (Robot Operating System), for efficient package management and communication between \textbf{machine vision} modules in \textbf{C++}
 \item Used \textbf{CUDA}, NVIDEA's parallel computing platform for GPU optimization of \textbf{OpenCV} code in \textbf{C++} for lane and object detection
-\end{itemize}
-
-\divider
-
-\cvevent{Engineering Laboratories \& Projects \companylogo{pictures/ECE_Logo.png}{29.5mm}{https://uwaterloo.ca/electrical-computer-engineering/}}{University of Waterloo}{Apr 2018 -- Current}{}
-\begin{itemize}
-\item ECE 108: Analyzed common casino games with set logic/probability and modeled a social network using a relational database in \textbf{C++}
-\item ECE 124: Programmed FPGAs in \textbf{VHDL} using digital logic
 \end{itemize}
 
 \end{document}

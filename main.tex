@@ -52,12 +52,37 @@
 % \setmainfont{Lato}
 
 % Change the colours if you want to
-\definecolor{Mulberry}{HTML}{72243D}
+\definecolor{DarkRed}{HTML}{72243D}
 \definecolor{DarkRed}{HTML}{962938}
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
-\colorlet{heading}{DarkRed}
-\colorlet{accent}{Mulberry}
+\definecolor{HeadingBlue}{HTML}{040480}
+\definecolor{AccentBlue}{HTML}{040480}
+\definecolor{HeadingGreen}{HTML}{07701c}
+\definecolor{AccentGreen}{HTML}{07701c}
+\definecolor{HeadingPurple}{HTML}{88088c}
+\definecolor{AccentPurple}{HTML}{88088c}
+
+% Red theme
+% \colorlet{heading}{DarkRed}
+% \colorlet{accent}{DarkRed}
+
+% Blue theme
+\colorlet{heading}{HeadingBlue}
+\colorlet{accent}{AccentBlue}
+
+% Green theme
+% \colorlet{heading}{HeadingGreen}
+% \colorlet{accent}{AccentGreen}
+
+% Purple theme
+% \colorlet{heading}{HeadingPurple}
+% \colorlet{accent}{AccentPurple}
+
+% Gray theme
+% \colorlet{heading}{SlateGrey}
+% \colorlet{accent}{LightGrey}
+
 \colorlet{emphasis}{SlateGrey}
 \colorlet{body}{Black}
 
@@ -74,12 +99,17 @@
   {\ifthenelse{\equal{#2}{}}{\hfill}{\hspace{#2}}\raisebox{-1.75\baselineskip}[0pt][0pt]%
     {\href{#3}{\includegraphics[height=2.0\baselineskip]{#1}}}}
     
+\newcommand{\christielogo}[3]
+  {\ifthenelse{\equal{#2}{}}{\hfill}{\hspace{#2}}\raisebox{-1\baselineskip}[0pt][0pt]%
+    {\href{#3}{\includegraphics[scale = 0.15]{#1}}}}
+% [height=2.0\baselineskip, width=5.0\baselineskip]
+
 \newcommand{\projectlogo}[2]
   {\hfill\raisebox{-1\baselineskip}[0pt][0pt]%
     {\href{#2}{\includegraphics[height=2\baselineskip]{#1}}}}
 
 \begin{document}
-\name{WALEED \textcolor{DarkRed}{AHMED}}
+\name{WALEED \textcolor{accent}{AHMED}}
 % \tagline{1B Computer Engineering}
 % \photo{2.8cm}{Globe_High}
 \personalinfo{%
@@ -102,28 +132,49 @@
 \cvsection[page1sidebar]{Skills}
 \smallskip
 \cvtag{C++}
-\cvtag{C\#}
 \cvtag{Python}
-\cvtag{Java}
-\cvtag{MATLAB}
+\cvtag{C\#}
+\cvtag{QML}
 \cvtag{JavaScript}
-\cvtag{HTML/CSS}
+\cvtag{HTML}
+\cvtag{CSS}
+\cvtag{Java}
+%\cvtag{MATLAB}
 
 \divider
 
 \cvtag{OpenCV}
 \cvtag{ROS}
+\cvtag{Qt}
 \cvtag{.NET}
 \cvtag{TensorFlow}
+\cvtag{Google Test}
+
+\divider
+
 \cvtag{Git}
+\cvtag{SVN}
+\cvtag{Agile}
+\cvtag{Jira}
+\cvtag{Jenkins}
 \cvtag{Bash}
-\cvtag{Arduino}
+\cvtag{Linux}
+\cvtag{Windows}
+%\cvtag{Visual Studio}
 
 %% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
 %% You can always just use \marginpar{...} if you do
 %% not need to align the top of the contents to any
 %% \cvsection title in the "main" bar.
 \cvsection{Experience}
+
+\cvevent{Software Developer \christielogo{pictures/Christie_Logo.jpg}{}{https://www.christiedigital.com/en-us}}{Christie Digital}{May 2019 -- Present}{Kitchener, ON}
+\begin{itemize}
+\item Worked closely with QA and UI/UX designers for user interface development and maintenance across a wide variety of platforms using the \textbf{Qt} framework in \textbf{C++} and \textbf{QML} 
+\item User interface and backend development for a high-profile application to be used to control up to 256 projectors at Dubai Expo in 2020
+\item Refactored the software architecture of a desktop application to be more modular and wrote extensive unit tests using \textbf{Google Test} for continuous integration purposes setup on a \textbf{Jenkins} build server
+\end{itemize}
+\divider
 
 \cvevent{Video Software Developer \companylogo{pictures/Synaptive_Logo.jpg}{47mm}{https://www.synaptivemedical.com/}}{Synaptive Medical}{Sep 2018 -- Dec 2018}{Toronto, ON}
 \begin{itemize}
@@ -141,17 +192,8 @@
 \item Developed software for industrial imaging applications on \textbf{Linux} machines with \textbf{Git} version control in an \textbf{Agile} environment 
 \item Implemented image correction algorithms and post-processing for industrial cameras in \textbf{Python} using \textbf{Numpy}, \textbf{OpenCV}, and \textbf{Matplotlib}
 \item Refactored data handling modules for efficient file input/output and wrote unit tests for them in \textbf{Python} using \textbf{Pytest}
-\item Restructured camera control modules in \textbf{C/C++} that use the \textbf{Camera Link} serial protocol to interface with the camera for control purposes
+\item Restructured camera control modules in \textbf{C/C++} that use the Camera Link serial protocol to interface with the camera for control purposes
 \item Documented software design decisions and a troubleshooting guide to efficiently debug issues pertaining to image acquisition
-\end{itemize}
-
-\cvsection{Activities}
-
-\cvevent{Software Team Lead \companylogo{pictures/UW_Robotics.png}{59mm}{http://uwrobotics.uwaterloo.ca/}}{UW Robotics}{Apr 2018 -- Present}{}
-\begin{itemize}
-\item Leading software team for a mobile racing robot set to compete in the \href{https://iarrc.org/}{\textbf{International Autonomous Robot Racing Competition}}
-\item Developed software architecture using a \textbf{Linux} based framework; \textbf{ROS} (Robot Operating System), for efficient package management and communication between \textbf{computer vision} modules in \textbf{C++}
-\item Used \textbf{CUDA}, NVIDIA's parallel computing platform for GPU optimization of \textbf{OpenCV} code in \textbf{C++} for lane and object detection
 \end{itemize}
 
 \end{document}

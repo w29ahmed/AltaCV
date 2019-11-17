@@ -99,6 +99,10 @@
   {\ifthenelse{\equal{#2}{}}{\hfill}{\hspace{#2}}\raisebox{-1.75\baselineskip}[0pt][0pt]%
     {\href{#3}{\includegraphics[height=2.0\baselineskip]{#1}}}}
     
+\newcommand{\qualcommlogo}[3]
+  {\ifthenelse{\equal{#2}{}}{\hfill}{\hspace{#2}}\raisebox{-1.75\baselineskip}[0pt][0pt]%
+    {\href{#3}{\includegraphics[scale = 0.075]{#1}}}}
+    
 \newcommand{\christielogo}[3]
   {\ifthenelse{\equal{#2}{}}{\hfill}{\hspace{#2}}\raisebox{-1\baselineskip}[0pt][0pt]%
     {\href{#3}{\includegraphics[scale = 0.15]{#1}}}}
@@ -134,9 +138,9 @@
 \smallskip
 \cvtag{C++}
 \cvtag{Python}
+\cvtag{C}
 \cvtag{C\#}
 \cvtag{QML}
-\cvtag{C}
 \cvtag{JavaScript}
 \cvtag{MATLAB}
 % \cvtag{HTML}
@@ -172,11 +176,17 @@
 \cvsection{Experience}
 \smallskip
 
+\cvevent{Incoming ADAS Software Engineering Intern \qualcommlogo{pictures/Qualcomm_Logo.png}{13mm}{https://www.qualcomm.com/}}{Qualcomm}{Jan 2020 -- Apr 2020}{Markham, ON}
+\begin{itemize}
+\item Develop software features involving machine learning, cameras, graphics, and computer vision for an autonomous vehicles platform
+\end{itemize}
+\divider
+
 \cvevent{Software Developer \christielogo{pictures/Christie_Logo.jpg}{}{https://www.christiedigital.com/en-us}}{Christie Digital}{May 2019 -- Aug 2019}{Kitchener, ON}
 \begin{itemize}
 \item Worked closely with QA and UI/UX designers for user interface development and maintenance to meet release deadlines across a wide variety of platforms using the \textbf{Qt} framework in \textbf{C++} and \textbf{QML}
 \item Significantly reduced the effort needed to maintain code health through software architecture redesign and setup of a continuous integration pipeline on a \textbf{Jenkins} build server that included unit tests with 90\% code coverage using \textbf{Google Test}
-\item User interface and backend development for a high-profile application that will enable seamless and efficient control of up to 256 projectors to deliver a world-class visual experience at \href{https://www.christiedigital.com/en-us/about-christie/news-room/press-releases/christie-named-as-official-partner-to-expo-2020}{Expo 2020 in Dubai}
+% \item User interface and backend development for a high-profile application that will enable seamless and efficient control of up to 256 projectors to deliver a world-class visual experience at \href{https://www.christiedigital.com/en-us/about-christie/news-room/press-releases/christie-named-as-official-partner-to-expo-2020}{Expo 2020 in Dubai}
 \end{itemize}
 \divider
 
@@ -192,10 +202,19 @@
 
 \cvevent{Industrial Imaging Software Developer \companylogo{pictures/PPO_Logo.png}{}{https://ppo.ca/}}{ P\&P Optica}{Jan 2018 -- Apr 2018}{Waterloo, ON}
 \begin{itemize}
-\item Developed software on \textbf{Linux} machines for industrial imaging applications with \textbf{Git} version control in an \textbf{agile} environment 
+% \item Developed software on \textbf{Linux} machines for industrial imaging applications with \textbf{Git} version control in an \textbf{agile} environment 
+\item Developed a robust image acquisition framework for rapid line scan imaging of an industrial conveyor belt in the food industry
 \item Implemented image correction algorithms and post-processing for industrial cameras in \textbf{Python} using \textbf{Numpy}, \textbf{OpenCV}, and \textbf{Matplotlib}
-\item Refactored data handling modules for efficient file input/output and wrote unit tests for them in \textbf{Python} using Pytest
-\item Restructured camera control modules in \textbf{C} that use the Camera Link serial protocol to interface with the camera for control purposes
+
+% an industrial grade imaging system for rapid line scan imaging on a conveyer belt
+
+% \item Refactored data handling modules for efficient file input/output and wrote unit tests for them in \textbf{Python} using Pytest
+% \item Restructured camera control modules in \textbf{C} that use the Camera Link serial protocol to interface with the camera for control purposes
+
+% \item Refactored data handling modules for efficient file input/output
+% \item Restructured camera control modules in \textbf{C}
+
+
 % \item Documented software design decisions and a troubleshooting guide to efficiently debug issues pertaining to image acquisition
 \end{itemize}
 

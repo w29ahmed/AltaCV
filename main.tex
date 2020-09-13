@@ -107,6 +107,10 @@
   {\ifthenelse{\equal{#2}{}}{\hfill}{\hspace{#2}}\raisebox{-0.4\baselineskip}[0pt][0pt]%
     {\href{#3}{\includegraphics[height=2.0\baselineskip]{#1}}}}
     
+\newcommand{\huaweilogo}[3]
+  {\ifthenelse{\equal{#2}{}}{\hfill}{\hspace{#2}}\raisebox{-1.75\baselineskip}[0pt][0pt]%
+    {\href{#3}{\includegraphics[scale = 0.03]{#1}}}}
+
 \newcommand{\qualcommlogo}[3]
   {\ifthenelse{\equal{#2}{}}{\hfill}{\hspace{#2}}\raisebox{-1.75\baselineskip}[0pt][0pt]%
     {\href{#3}{\includegraphics[scale = 0.075]{#1}}}}
@@ -190,6 +194,12 @@
 \cvsection{Experience}
 \smallskip
 
+\cvevent{Autonomous Vehicles Software Engineering Intern \huaweilogo{pictures/Huawei_Logo.png}{}{https://www.huawei.com/ca/}}{Huawei}{Sep 2020 -- Present}{Toronto, ON}
+\begin{itemize}
+\item Path planning research and development for a level 4+ system
+\end{itemize}
+\divider
+
 \cvevent{Automotive ADAS Software Engineering Intern \qualcommlogo{pictures/Qualcomm_Logo.png}{11mm}{https://www.qualcomm.com/}}{Qualcomm}{Jan 2020 -- Apr 2020}{Toronto, ON}
 \begin{itemize}
 \item Developed system and application software for an ADAS \& autonomous driving platform in \textbf{C/C++}
@@ -207,11 +217,11 @@
 
 \cvevent{Video Software Engineering Intern \companylogo{pictures/Synaptive_Logo.jpg}{34mm}{https://www.synaptivemedical.com/}}{Synaptive Medical}{Sep 2018 -- Dec 2018}{Toronto, ON}
 \begin{itemize}
-\item Improved visibility of biological tissue during surgical procedures through colour manipulation using \textbf{OpenCV} in \textbf{C++}
-\item Facilitated full control of camera settings through a \textbf{.NET} application that served as a frontend interface to a serial communication protocol
-\item Enabled intuitive usage of a colour manipulation algorithm through a web interface built with \textbf{JavaScript}, \textbf{HTML}, and \textbf{CSS}
+\item Improved visibility of biological tissue during surgical procedures through colour manipulation using \textbf{C++ (OpenCV)} and \textbf{C\#}
+% \item Facilitated full control of camera settings through a \textbf{.NET} application that served as a frontend interface to a serial communication protocol
+% \item Enabled intuitive usage of a colour manipulation algorithm through a web interface built with \textbf{JavaScript}, \textbf{HTML}, and \textbf{CSS}
 \item Post-processed image data in \textbf{Python} using \textbf{Pandas}, \textbf{Numpy}, and \textbf{Matplotlib} to analyze colour manipulation
-\item Used \textbf{C\#} to integrate image processing algorithms with existing software architecture in a Windows environment
+% \item Used \textbf{C\#} to integrate image processing algorithms with existing software architecture in a Windows environment
 \end{itemize}
 \divider
 
